@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakshi-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap"
@@ -28,503 +29,6 @@
         });
     </script>
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        background-color: rgb(124, 8, 234);
-        color: white;
-        font-family: 'poppins';
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 100px;
-        background-color: rgb(27, 2, 47);
-        font-size: 1.5rem;
-    }
-
-    .rightsection {
-        filter: drop-shadow(10px 10px 10px rgb(218, 176, 238));
-    }
-
-    nav ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    nav ul li {
-        list-style-type: none;
-        margin: 0 23px;
-    }
-
-    nav ul a {
-        text-decoration: none;
-        color: white;
-    }
-
-    nav ul a:hover {
-        color: rgb(67, 169, 224);
-        font-size: 1.49rem;
-    }
-
-    .firstSection,
-    .secondSection {
-        display: flex;
-        justify-content: space-around;
-        margin: 23px;
-        align-items: center;
-
-    }
-
-    .left {
-        opacity: 0;
-        animation: slidelefthead 1s ease forwards;
-        font-size: 2rem;
-    }
-
-    @keyframes slidelefthead {
-        0% {
-            transform: translateX('-100px');
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateX(50px);
-            opacity: 1;
-        }
-    }
-
-    .right {
-        opacity: 0;
-        animation: sliderighthead 1s ease forwards;
-    }
-
-    @keyframes sliderighthead {
-        0% {
-            transform: translateX('-100px');
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateX(50px);
-            opacity: 1;
-        }
-    }
-
-    .content {
-        width: 37%;
-        font-size: 3.2rem;
-        opacity: 0;
-        animation: pslide 1s ease forwards;
-        animation-delay: 1.9s;
-    }
-
-    @keyframes pslide {
-        0% {
-            transform: translateX(-100px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-
-    .leftsection {
-
-        width: 37%;
-        font-size: 3.2rem;
-
-    }
-
-    .rightsection {
-        margin: 18px;
-        width: 29%;
-
-    }
-
-    .Pink {
-        color: rgb(245, 58, 226);
-        animation: pinky 4s ease forwards;
-        animation-delay: 2.5s;
-        opacity: 0;
-    }
-
-    @keyframes pinky {
-
-        0% {
-            transform: translateY(-100px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateY(0px);
-            opacity: 1;
-        }
-    }
-
-    #typed-output {
-        opacity: 0.2;
-        animation: to 2.8s linear infinite;
-        animation-delay: 2s;
-    }
-
-    @keyframes to {
-        0% {
-            opacity: 0.5;
-        }
-
-        100% {
-            opacity: 1;
-        }
-
-    }
-
-    .shiva {
-        text-decoration: line-through;
-    }
-
-    .leftsecondsection {
-        width: 40%;
-    }
-
-    .innerleft img:hover {
-        transform: scale(1.05);
-    }
-
-    .rightsecondsection {
-        width: 45%;
-        font-size: 1.6rem;
-        color: white;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .innerleft img {
-        box-shadow: 2px 3px 10px rgb(230, 181, 245);
-    }
-
-    .innerleft {
-        cursor: pointer;
-
-    }
-
-    .innerright {
-        padding: 32px;
-        text-align: justify;
-    }
-
-    .secondSection {
-        margin: 60px;
-    }
-
-    .thirdsection .ed:hover {
-        transform: translateY(-10px);
-    }
-
-    .thirdsection .ed {
-        width: 20%;
-        background-color: rgb(40, 4, 76);
-        border-radius: 5px;
-        box-shadow: 10px 10px 19px rgba(5, 0, 0, 0.55);
-        aspect-ratio: 1/1;
-        padding: 20px;
-        margin-block: 20px;
-        font-family: 'Courier New', Courier, monospace;
-    }
-
-    .thirdsection {
-        display: flex;
-        justify-content: space-around;
-        margin: 100px 20px 0;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .ed button {
-        border: none;
-        outline: 0;
-        padding: 15px;
-        color: white;
-        background-color: black;
-        width: 100%;
-        cursor: pointer;
-        margin: 5px 0px;
-    }
-
-    .ed button:hover {
-        opacity: 0.9;
-        background-color: rgba(255, 255, 255, 0.4);
-        color: black;
-    }
-
-    .skillhead {
-        width: 50%;
-        font-size: 3rem;
-        cursor: pointer;
-    }
-
-    .skillhead div:hover {
-        font-size: 3.25rem;
-        color: white;
-        text-shadow: 2px 3px 10px rgb(51, 5, 76);
-    }
-
-    .container-body .card-box .percent {
-        margin: 0;
-        padding: 0;
-        font-family: system-ui, 'Helvetica Neue', sans-serif;
-    }
-
-    .card-box {
-        position: relative;
-        width: 200px;
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: none;
-        gap: 4px;
-    }
-
-    .card-box .percent {
-        position: relative;
-        width: 150px;
-        height: 150px;
-    }
-
-    .card-box .percent svg {
-        position: relative;
-        width: 150px;
-        height: 150px;
-    }
-
-    .card-box .percent svg circle {
-        width: 150px;
-        height: 150px;
-        fill: none;
-        stroke-width: 10;
-        stroke: #000;
-        transform: translate(5px, 5px);
-        stroke-dasharray: 440;
-        stroke-dashoffset: 440;
-        stroke-linecap: round;
-    }
-
-    .card-box .percent svg circle:nth-child(1) {
-        stroke-dasharray: 0;
-        stroke: #252323;
-    }
-
-    .card-box .percent svg circle:nth-child(2) {
-        stroke-dashoffset: calc(440-((440*89)/100));
-        stroke: #02afff;
-
-    }
-
-    .container-body {
-        display: flexbox;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background: rgb(88, 42, 131);
-    }
-
-    .card-box .percent .number {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #999;
-    }
-
-    .card-box .percent .number h2 {
-        font-size: 48px;
-    }
-
-    .card-box .percent .number h2 {
-        font-size: 24px;
-    }
-
-    .card-box .text {
-        padding: 10px 0 0;
-        color: #999;
-        font-weight: 700;
-        letter-spacing: 1;
-    }
-    .skills {
-    display: flex;
-    flex-direction: column;
-    height: 160vh;
-}
-
-.language-known,
-.skills-known {
-    border: 2px solid white;
-    height: 60vh;
-    margin: 40px 240px;
-    border-radius: 15px;
-}
-.skills-known{
-    height: 80vh;
-}
-nav.skill{
-    border-radius: 15px 15px 0 0;
-    font-size: 1.4rem;
-    font-weight: bold;
-}
-.lang-control{
-    display: flex;
-    height: 47vh;
-    justify-content: space-around;
-
-}
-.lang-left,.lang-right{
-    display: flex;
-    height: 100%;
-    width: 40%;
-    flex-direction: column;
-    margin-top: 20px;
-}
-.lang-m{
-    height:40%; 
-    width: 100%;
-    margin: auto;
-}
-.lang{
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    height: 80%;
-    margin: 0;
-
-}
-.lang-detail{
-    position: relative;
-}
-.lang-about{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.lang-about img{
-    max-width: 100%;
-    max-height: 100%;
-    transform: transform 0.3 ease;
-}
-.lang-name{
-    display: none;
-    flex-grow: 1;
-    background-color: #3498db;
-    color: white;
-    padding: 10px;
-    justify-content: space-between;
-    text-align: center;
-    transform: transform 0.3 ease;
-}
-.name-contain{
-    display: flex;
-    flex-direction: column;
-}
-span.name {
-    font-size: 2.5rem;
-    font-weight: 1000;
-}
-.c{
-    color: #283593;
-}
-.java{
-    color: #d46a10;
-}
-.js{
-    color: #fade34;
-}
-.py{
-    color: #6c6c6c;
-}
-span.lang-knowlegde{
-    color: black; 
-    margin-top: -15px;
-    font-size: 0.8rem;
-}
-.lang-about:hover{
-    width: 400px;
-    height: 100px;
-    border-radius: 50px;
-    background-color: #3498db;
-
-}
-.lang-about:hover img {
-    transform: scale(0.4);
-}
-.lang-about:hover img.jss {
-    margin: -30px;
-}
-.lang-about:hover .lang-name {
-    display: flex;
-    justify-content: space-around;
-}
-.lang-check{
-    display: flex;
-    justify-content:center;
-    padding-bottom: -50px;
-
-}
-.adv img{
-   height: 10vh;  
-}
-.int img{
-    height: 11vh;
-}
-.beg img{
-    height: 12vh;
-    margin-bottom: -50px;
-}
-.skill-control{
-    height: 60vh;
-}
-#fontt{
-    font-size: 2rem;
-}
-.html{
-    color: #e54d26;
-}
-.css{
-    color: #dedde1;
-}
-.react{
-    color: #62b3f6;
-     
-}
-.vs{
-    color: #013753;
-}
-.git{
-    color: #de4c35;
-}
-.github{
-    color: #ffffff  ;
-}
-</style>
 
 <body>
     <heder>
@@ -560,8 +64,9 @@ span.lang-knowlegde{
             <span id="element"></span>
         </div>
         <div class="rightsection">
-            <img src="bgnew.png" style="width:125%; margin:10px;" />
+            <img src="./Assets/bgnew.png" style="width:125%; margin:10px;" />
         </div>
+
 
     </section>
     </main>
@@ -570,7 +75,9 @@ span.lang-knowlegde{
     </a>
     <section class="secondSection" style="margin:49 0 0px;">
         <div class="leftsecondsection">
-            <div class="innerleft"><img src="sakshi.jpg" class="love" style="width: 69%; margin: 0 45px 0;" /></div>
+            <div class="innerleft"><img src="./Assets/sakshi.jpg" class="love" style="width: 69%; margin: 0 45px 0;" />
+            </div>
+
         </div>
         <div class="rightsecondsection">
             <div class="innerright">Hey! I am a Result-driven and enthusiastic computer science person with a passion
@@ -588,8 +95,9 @@ span.lang-knowlegde{
     <section class="thirdsection">
         <div class="ed">
             <div class="ed-1">
-                <img src="hpd.jpg" Style=" width:30%; border-radius: 50%;"></img>
+                <img src="./Assets/hpd.jpg" Style=" width:30%; border-radius: 50%;"></img>
                 <br>
+                <p>HTML</p>
                 <h3>Matriculation[2015]</h3>
             </div>
             <br>
@@ -599,8 +107,9 @@ span.lang-knowlegde{
         </div>
         <div class="ed">
             <div class="ed-1">
-                <img src="hpd.jpg" Style=" width:30%; border-radius: 50%;"></img>
+                <img src="./Assets/hpd.jpg" Style=" width:30%; border-radius: 50%;"></img>
                 <br>
+                <p>HTML</p>
                 <h3>Intermediate[2017]</h3>
             </div>
             <br>
@@ -610,8 +119,9 @@ span.lang-knowlegde{
         </div>
         <div class="ed">
             <div class="ed-1">
-                <img src="bsapg.png" Style=" width:28%; border-radius: 50%;"></img>
+                <img src="./Assets/bsapg.png" Style=" width:28%; border-radius: 50%;"></img>
                 <br>
+                <p>HTML</p>
                 <h3>Graduation(B.Sc-CS)[2020]</h3>
             </div>
             <br>
@@ -621,8 +131,9 @@ span.lang-knowlegde{
         </div>
         <div class="ed">
             <div class="ed-1">
-                <img src="bsacet.jpeg" Style=" width:30%; border-radius: 50%;"></img>
+                <img src="./Assets/bsacet.jpeg" Style=" width:30%; border-radius: 50%;"></img>
                 <br>
+                <p>HTML</p>
                 <h3>Post-Grad(MCA)[2024]</h3>
             </div>
             <br>
@@ -631,354 +142,119 @@ span.lang-knowlegde{
             <p><button onclick="www.bsapgcollege.ac.in">Visit Now</button></p>
         </div>
     </section>
-    <div class="heading" style="text-align: center; margin-left: 32%; padding: 70px;">
-        <h1 class="skillhead">
-            <div>My Skills</div>
-        </h1>
+    <div class="inner">
+        <div class="skill-header">
+            <div class="heading" style="text-align: center; margin-left: 32%; padding: 70px;">
+                <h1 class="skillhead">
+
+                    <div>My Skills</div>
+                </h1>
+            </div>
+        </div>
+
+  
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/html.png">
+                    <p class="flip-text">Advance</p>
+                </div>
+                <p>HTML</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/css.png">
+                </div>
+                <p>CSS</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/javascript.png">
+                </div>
+                <p>Java Script</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/react.png">
+                </div>
+                <p>React Js</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/node.png">
+                </div>
+                <p>Node Js</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/sql.png">
+                </div>
+                <p>SQL</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/c.png">
+                </div>
+                <p>C</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/java.png">
+                </div>
+                <p>Java</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/git.png">
+                </div>
+                <p>Git</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/wait.png">
+                </div>
+                <p>GitHub</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/solidity.png">
+                </div>
+                <p>Solidity</p>
+            </div>
+        </div>
+        <div class="skill-container">
+            <div class="skill-box">
+                <div class="img">
+                    <img src="./Assets/vscode.png">
+                </div>
+                <p>VS Code IDE</p>
+            </div>
+        </div>
     </div>
-    <section class="skills">
-        <section class="language-known contanier-fluid">
-            <nav class="skill">
-            Language Known
-            </nav>
-            <div class="lang-control">
-                <div class="lang-left">
-                    <div class="lang-m">
-                        <div class="lang">
-                            <div class="lang-detail">
-                                <div class="lang-about">
-                                    <img src="c.png">
-                                    <div class="lang-name">
-                                        <div class="name-contain">
-                                            <span class="name c">C</span>
-                                            <span class="lang-knowlegde"> Advanced</span>
-                                        </div>
-                                        <div class="lang-check adv">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lang-m">
-                        <div class="lang">
-                            <div class="lang-detail">
-                                <div class="lang-about">
-                                    <img src="java.png">
-                                    <div class="lang-name">
-                                        <div class="name-contain">
-                                            <span class="name java">Java</span>
-                                            <span class="lang-knowlegde"> Intermediate</span>
-                                        </div>
-                                        <div class="lang-check int">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lang-right">
-                    <div class="lang-m">
-                        <div class="lang">
-                            <div class="lang-detail">
-                                <div class="lang-about">
-                                    <img src="javascript.png">
-                                    <div class="lang-name">
-                                        <div class="name-contain">
-                                            <span class="name  js">JS</span>
-                                            <span class="lang-knowlegde">Intermediate</span>
-                                        </div>
-                                        <div class="lang-check int">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lang-m">
-                        <div class="lang">
-                            <div class="lang-detail">
-                                <div class="lang-about">
-                                    <img src="python.png">
-                                    <div class="lang-name">
-                                        <div class="name-contain">
-                                            <span class="name py">Python</span>
-                                            <span class="lang-knowlegde "> Beginner</span>
-                                        </div>
-                                        <div class="lang-check beg">
-                                            <img src="checkmark.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="skills-known">
-            <nav class="skill">
-                Skills Known
-            </nav>
-            <div class="lang-control  skill-control">
-                <div class="lang-left">
-                    <div class="lang-m">
-                        <div class="lang">
-                            <div class="lang-detail">
-                                <div class="lang-about">
-                                    <img src="html.png">
-                                    <div class="lang-name">
-                                        <div class="name-contain">
-                                            <span class="name html" id="fontt">Html</span>
-                                            <span class="lang-knowlegde"> Advanced</span>
-                                        </div>
-                                        <div class="lang-check adv">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lang-m">
-                        <div class="lang">
-                            <div class="lang-detail">
-                                <div class="lang-about">
-                                    <img src="css.png">
-                                    <div class="lang-name">
-                                        <div class="name-contain">
-                                            <span class="name css" id="fontt">CSS</span>
-                                            <span class="lang-knowlegde"> Advanced</span>
-                                        </div>
-                                        <div class="lang-check adv">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lang-m">
-                        <div class="lang">
-                            <div class="lang-detail">
-                                <div class="lang-about">
-                                    <img src="react.png">
-                                    <div class="lang-name">
-                                        <div class="name-contain">
-                                            <span class="name react" id="fontt">React.js</span>
-                                            <span class="lang-knowlegde"> Beginner</span>
-                                        </div>
-                                        <div class="lang-check beg">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lang-right">
-                    <div class="lang-m">
-                        <div class="lang">
-                            <div class="lang-detail">
-                                <div class="lang-about">
-                                    <img src="vscode.png">
-                                    <div class="lang-name">
-                                        <div class="name-contain">
-                                            <span class="name  vs" id="fontt">VsCode</span>
-                                            <span class="lang-knowlegde">Intermediate</span>
-                                        </div>
-                                        <div class="lang-check int">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lang-m">
-                        <div class="lang">
-                            <div class="lang-detail">
-                                <div class="lang-about">
-                                    <img src="git.png">
-                                    <div class="lang-name">
-                                        <div class="name-contain">
-                                            <span class="name git" id="fontt">GIT</span>
-                                            <span class="lang-knowlegde">Intermediate</span>
-                                        </div>
-                                        <div class="lang-check int">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-                                            <img src="checkmark.png">
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lang-m">
-                        <div class="lang">
-                            <div class="lang-detail">
-                                <div class="lang-about">
-                                    <img src="github.png">
-                                    <div class="lang-name">
-                                        <div class="name-contain">
-                                            <span class="name github" id="fontt">GitHub</span>
-                                            <span class="lang-knowlegde ">Intermediate</span>
-                                        </div>
-                                        <div class="lang-check int">
-                                            <img src="checkmark.png">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <!--<section class="container-body">
-         <div class="card-box">     
-            <div class="percent">
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="number">
-                    <h2>89<span>%</span></h2>
-                </div>
-            </div>
-                    <h2 class="text">HTML</h2>
-          </div> 
-          <div class="card-box">     
-            <div class="percent">
-                <svg>
-                    <circle cx="70" cy="70" r="70" stroke="red"></circle>
-                    <circle cx="70" cy="70" r="70" stroke="red"></circle>
-                </svg>
-                <div class="number">
-                    <h2>82<span>%</span></h2>
-                </div>
-            </div>
-                    <h2 class="text">CSS</h2>
-          </div>
-          <div class="card-box">     
-            <div class="percent">
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="number">
-                    <h2>85<span>%</span></h2>
-                </div>
-            </div>
-                    <h2 class="text">Java Script</h2>
-          </div>
-          <div class="card-box">     
-            <div class="percent">
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="number">
-                    <h2>40<span>%</span></h2>
-                </div>
-            </div>
-                    <h2 class="text">React js</h2>
-          </div>
-          <div class="card-box">     
-            <div class="percent">
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="number">
-                    <h2>90<span>%</span></h2>
-                </div>
-            </div>
-                    <h2 class="text">SQL</h2>
-          </div>
-          <div class="card-box">     
-            <div class="percent">
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="number">
-                    <h2>80<span>%</span></h2>
-                </div>
-            </div>
-                    <h2 class="text">JAVA</h2>
-          </div>
-          <div class="card-box">     
-            <div class="percent">
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="number">
-                    <h2>89<span>%</span></h2>
-                </div>
-            </div>
-                    <h2 class="text">C</h2>
-          </div>
-          <div class="card-box">     
-            <div class="percent">
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="number">
-                    <h2>80<span>%</span></h2>
-                </div>
-            </div>
-                    <h2 class="text">Bootstrap, Jquery, XML</h2>
-          </div>
-          <div class="card-box">     
-            <div class="percent">
-                <svg>
-                    <circle cx="70" cy="70" r="70"></circle>
-                    <circle cx="70" cy="70" r="70"></circle>
-                </svg>
-                <div class="number">
-                    <h2>30<span>%</span></h2>
-                </div>
-            </div>
-                    <h2 class="text">Blockchain Development</h2>
-          </div>
-        </section>-->
+    </div>
     </main>
-    <!--<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('element',{
-            strings: ['SBC','POR'],
-            typeSpeed:50,
-        });
-    </script>-->
+
 
 </body>
 
