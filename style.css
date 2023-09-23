@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -260,13 +259,18 @@ nav ul a:hover {
     width: 100px;
 
 }
-.inner{
+
+.inner {
     padding: 2rem;
 }
 
 .skill-container {
+    width: 100px;
+    height: 100px;
+    display: grid;
+    border-radius: 50%;
     margin-left: 180px;
-    display:inline-table;
+    display: inline-table;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -274,27 +278,33 @@ nav ul a:hover {
     padding: 1rem 50px;
     aspect-ratio: 1/1;
     background-color: transparent;
+    cursor: pointer;
+}
 
+.card-caption:hover {
+    display: none;
 }
 
 .skill-container img {
     height: 100px;
     filter: drop-shadow(7px 2px 2px rgb(18, 1, 27));
 }
-.skill-container img:hover{
+
+.skill-container img:hover {
     animation: flip-it 1000ms ease forwards;
 }
-@keyframes flip-it{
-    0%
-    {
+
+@keyframes flip-it {
+    0% {
         transform: perspective(400px) scaleX(1);
     }
-    100%
-    {
+
+    100% {
         transform: perspective(400px) scaleX(-1);
     }
-    
+
 }
+
 .skill-box {
     position: relative;
     text-align: center;
@@ -302,4 +312,142 @@ nav ul a:hover {
     transform-style: preserve-3d;
 }
 
+.skill-container:hover .skill-box {
+    transform: rotateY(180deg);
+}
 
+.img,
+.flip-card-back {
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+
+.card-text {
+    padding: 2rem;
+}
+
+.best_wrapper {
+    padding-top: 0;
+    display: flex;
+
+}
+
+.best_wrapper .card {
+    height: 60%;
+    width: 20%;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 10px 10px 19px rgb(5, 0, 0);
+    aspect-ratio: 1/1;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px;
+    margin-block: 10px;
+    overflow: hidden;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container .row {
+    width: 259px;
+    padding: 20px;
+    display: inline-table;
+}
+
+
+
+.best_wrapper .card .best-text {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(69, 10, 97, 0.8);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 2s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.best-text {
+    text-align: center;
+}
+
+.best_wrapper .card:hover .best-text {
+    transform: translateX(0);
+
+}
+
+.footer_wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: left;
+    background-color:rgba(62, 3, 77, 1);
+    margin-top: 80px;
+    padding: 10px;
+    height: 25vh;
+    cursor: pointer;
+}
+.leftcontact
+{
+ display: flex;
+}
+.leftcontact .cntct-img
+{
+    display: inline-flex;
+}
+.leftcontact .cntct-img:hover{
+    filter: drop-shadow(2px 3px 9px rgb(0, 0, 0));
+ 
+}
+.leftcontact .cntct-txt
+{
+    font-size: 1.35rem;
+    margin-top: 29px;
+    
+}
+
+.leftcontact:hover{
+    text-shadow:  3px 3px 4px rgb(0, 0, 0);
+}
+.middcontact
+{
+    cursor: pointer;
+    font-size: 1.35rem;
+    align-items: left;
+    margin-top: 50px;
+}
+.rghtcontact
+{
+ margin-top: 20px;
+}
+ 
+.boxicons
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border: 2px solid purple;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.boxicons:hover{
+    filter: drop-shadow(3px 2px 1px rgb(0, 0, 0));
+}

@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakshi-Portfolio</title>
+    <link rel="icon" type="image/png" href="./Assets/s.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600&display=swap"
         rel="stylesheet">
     <!-- Include jQuery -->
@@ -37,18 +39,31 @@
             <div class="left">Sakshi's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="#HOME" class="slowscroll">Home</a></li>
-                    <li><a href="#ABOUTME" class="slowscroll">About Me</a></li>
-                    <li><a href="#Education" class="slowscroll">Education</a></li>
-                    <li><a href="Skills" class="slowscroll">Skills</a></li>
-                    <li><a href="Contactme" class="slowscroll">Contact Me</a></li>
-                    <li><a href="Projects" class="slowscroll">Projects</a></li>
-
-
+                    <li><a href="#HOME">Home</a></li>
+                    <li><a href="#ABOUTME">About Me</a></li>
+                    <li><a href="#Education">Education</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contactme">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </heder>
+    <!-- <header>
+        <nav>
+            <div class="left">Sakshi's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#HOME"> Home</a></li>
+                    <li><a href="#ABOUTME"> About Me</a></li>
+                    <li><a href="#Education">Education</li><a>
+                        <li><a href="#Skiils">Skills</li><a>
+                            <li><a href="#Projects">Projects</li><a>
+                                <li><a href="#ContactMe">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
     <a name="HOME">
         <main>
     </a>
@@ -88,16 +103,27 @@
             </div>
         </div>
     </section>
+    <div class="resume d-flex justify-content-center align-items-center">
+        <button class="btn" onclick="window.open(`Assets/Sakshi-Sharma-Resume.pdf`)"> download resume</button>
+    </div>
+
     </main>
     <a name="Education">
         <main>
     </a>
+    <div class="skill-header">
+        <div class="heading" style="text-align: center; margin-left: 32%; padding:20px;">
+            <h1 class="skillhead">
+                <div>Education</div>
+            </h1>
+        </div>
+    </div>
     <section class="thirdsection">
         <div class="ed">
             <div class="ed-1">
                 <img src="./Assets/hpd.jpg" Style=" width:30%; border-radius: 50%;"></img>
                 <br>
-                <p>HTML</p>
+
                 <h3>Matriculation[2015]</h3>
             </div>
             <br>
@@ -109,7 +135,7 @@
             <div class="ed-1">
                 <img src="./Assets/hpd.jpg" Style=" width:30%; border-radius: 50%;"></img>
                 <br>
-                <p>HTML</p>
+
                 <h3>Intermediate[2017]</h3>
             </div>
             <br>
@@ -121,7 +147,7 @@
             <div class="ed-1">
                 <img src="./Assets/bsapg.png" Style=" width:28%; border-radius: 50%;"></img>
                 <br>
-                <p>HTML</p>
+
                 <h3>Graduation(B.Sc-CS)[2020]</h3>
             </div>
             <br>
@@ -133,7 +159,7 @@
             <div class="ed-1">
                 <img src="./Assets/bsacet.jpeg" Style=" width:30%; border-radius: 50%;"></img>
                 <br>
-                <p>HTML</p>
+
                 <h3>Post-Grad(MCA)[2024]</h3>
             </div>
             <br>
@@ -142,24 +168,27 @@
             <p><button onclick="www.bsapgcollege.ac.in">Visit Now</button></p>
         </div>
     </section>
-    <div class="inner">
+    </main>
+    <a name="Skills">
+        <main>
+    </a>
+    <section class="inner">
+
         <div class="skill-header">
             <div class="heading" style="text-align: center; margin-left: 32%; padding: 70px;">
                 <h1 class="skillhead">
-
                     <div>My Skills</div>
                 </h1>
             </div>
         </div>
-
-  
         <div class="skill-container">
             <div class="skill-box">
                 <div class="img">
                     <img src="./Assets/html.png">
-                    <p class="flip-text">Advance</p>
                 </div>
-                <p>HTML</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Advanced</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
@@ -167,7 +196,9 @@
                 <div class="img">
                     <img src="./Assets/css.png">
                 </div>
-                <p>CSS</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Advanced</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
@@ -175,7 +206,9 @@
                 <div class="img">
                     <img src="./Assets/javascript.png">
                 </div>
-                <p>Java Script</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Intermediate</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
@@ -183,15 +216,20 @@
                 <div class="img">
                     <img src="./Assets/react.png">
                 </div>
-                <p>React Js</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Beginner</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
             <div class="skill-box">
                 <div class="img">
                     <img src="./Assets/node.png">
+
                 </div>
-                <p>Node Js</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Beginner</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
@@ -199,7 +237,9 @@
                 <div class="img">
                     <img src="./Assets/sql.png">
                 </div>
-                <p>SQL</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Advanced</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
@@ -207,7 +247,9 @@
                 <div class="img">
                     <img src="./Assets/c.png">
                 </div>
-                <p>C</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Advanced</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
@@ -215,7 +257,9 @@
                 <div class="img">
                     <img src="./Assets/java.png">
                 </div>
-                <p>Java</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Advanced</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
@@ -223,7 +267,9 @@
                 <div class="img">
                     <img src="./Assets/git.png">
                 </div>
-                <p>Git</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Intermediate</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
@@ -231,7 +277,9 @@
                 <div class="img">
                     <img src="./Assets/wait.png">
                 </div>
-                <p>GitHub</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Intermediate</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
@@ -239,21 +287,174 @@
                 <div class="img">
                     <img src="./Assets/solidity.png">
                 </div>
-                <p>Solidity</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Beginner</b></h5>
+                </div>
             </div>
         </div>
         <div class="skill-container">
             <div class="skill-box">
                 <div class="img">
                     <img src="./Assets/vscode.png">
+
                 </div>
-                <p>VS Code IDE</p>
+                <div class="flip-card-back">
+                    <h5 class="card-text"><b>Intermediate</b></h5>
+                </div>
             </div>
         </div>
-    </div>
-
-    </div>
+    </section>
     </main>
+    <a name="Projects">
+        <main>
+    </a>
+
+    <div class="skill-header">
+        <div class="heading" style="text-align: center; margin-left: 32%; padding: 15px;">
+            <h1 class="skillhead">
+                <div>Projects</div>
+            </h1>
+        </div>
+    </div>
+    <section class="best_wrapper col-12">
+        <div class="card rounded-0" style="background-image: url(./Assets/gos.png);">
+            <div class="best-text">
+                <h3 class="text-white">GAME OF SPORTS</h3>
+                <p>A console based puzzle game developed using C language, with a pinch of guessing feature</p>
+            </div>
+        </div>
+        <div class="card rounded-0" style="background-image: url(./Assets/the_juicy_stack.png   );">
+            <div class="best-text">
+                <h3 class="text-white">THE JUICY STACK</h3>
+                <p>A Major Project that is built using all the current web tech.</p>
+            </div>
+        </div>
+        <div class="card rounded-0" style="background-image: url(./Assets/portfolio.png);">
+            <div class="best-text">
+                <h3 class="text-white">My Portfolio Website</h3>
+                <p>The webpage you are scrolling, is designed and developed by me using the Web Technology ;)</p>
+            </div>
+        </div>
+        <div class="card rounded-0" style="background-image: url(./Assets/mini.jpg);">
+            <div class="best-text">
+                <h3 class="text-white">MINI PROJECTS</h3>
+                <p>Here is a collection of 2 small mini projects including a "Jumping Square" and "Ball Aimation"</p>
+            </div>
+        </div>
+    </section>
+    </main>
+  <a name="Contactme">
+    <main>
+  </a>
+    <div class="skill-header">
+        <div class="heading" style="text-align: center; margin-left: 32%;">
+            <h1 class="skillhead">
+                <div>Contact Details</div>
+            </h1>
+        </div>
+    </div>
+    <section class="footer_wrapper">
+        <div class="leftcontact">
+            <div class="cntct-img">
+                <img src="./Assets/s.png" width="70%" style="margin-left: 0px;" />
+            </div>
+            <div class="cntct-txt">
+                <h1>Sakshi <br> Sharma</h1>
+            </div>
+        </div>
+        <div class="middcontact">
+            <a href="https://www.linkedin.com/in/sakshi-sharma-5648a423a/" class="boxicons"><i class='bx bxl-linkedin-square'></i></a>          
+            <a href="#" class="boxicons"><i class='bx bxl-gmail'></i></a>
+            <a href="#" class="boxicons"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="boxicons"><i class='bx bxl-github'></i></a>
+            <a href="#" class="boxicons"><i class='bx bxl-whatsapp'></i></a>
+
+
+        </div>
+        <div class="rghtcontact">
+            <h2>Copyright</h2>
+            <h3>content @2023</h3>
+            <h3>All Rights Reserved</h3>
+            <h5> Design and Developed by Sakshi Sharma</h5>
+        </div>
+    </main>
+
+    </section>
+
+    <!--<section class="footer_wrapper mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 col-md-6 text-center text-md-start">
+                    <div class="footer-logo mb-3 mb-md-0">
+                        <img src="./Assets/the_juicy_stack.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <ul
+                        class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 mb-mb-0">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="copyright-text text-center mb-3 mb-lg-0">
+                        <p class="mb-0">
+                            Copyright &COPY; 2023
+                            <a href="#">
+                                The Juciy Stack
+                            </a>.
+                            All Rights Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+.footer_wrapper .footer-logo img{
+    width: 120px;
+}
+.footer_wrapper .social-icon li{
+    margin: 6px;
+}
+.footer_wrapper .social-icon a{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    display: inline-block;
+    border: 2px solid rgb(6, 62, 88);
+    color: black;
+    text-align: center;
+    border-radius: 100%;
+    -webkit-transition:all 0.3s cubic-bezier(0.645,0.045,0.355,1) ;
+    transition: all 0.3s cubic-bezier(0.645,0.045,0.355,1);
+}
+.footer_wrapper .social-icon a:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.2);        
+}
+
+.footer_wrapper .copyright-text p{
+    font-size: 11px;
+    margin-top: 0rem;
+    font-weight: 600;
+}-->
+
 
 
 </body>
