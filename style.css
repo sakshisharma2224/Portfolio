@@ -194,6 +194,21 @@ nav ul a:hover {
     margin: 60px;
 }
 
+.btn
+{
+    background-color:rgb(69, 9, 126);
+    box-shadow: 2px 3px 5px black;
+    border-radius: 20px;
+    padding: 20px;
+    border: 0px;
+    margin-left: 650px;
+    align-self: center;
+    height: 60px;
+    width: 250px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
 .thirdsection .ed:hover {
     transform: translateY(-10px);
 }
