@@ -7,6 +7,7 @@
     <title>Sakshi-Portfolio</title>
     <link rel="icon" type="image/png" href="./Assets/s.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -35,43 +36,31 @@
 <body>
     <heder>
 
-        <nav>
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="left">Sakshi's Portfolio</div>
             <div class="right">
                 <ul>
-                    <li><a href="#HOME">Home</a></li>
-                    <li><a href="#ABOUTME">About Me</a></li>
-                    <li><a href="#Education">Education</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contactme">Contact Me</a></li>
+                    <li class="nav-items"><a href="#HOME">Home</a></li>
+                    <li class="nav-items"><a href="#ABOUTME">About Me</a></li>
+                    <li class="nav-items"><a href="#Education">Education</a></li>
+                    <li class="nav-items"><a href="#Skills">Skills</a></li>
+                    <li class="nav-items"><a href="#Projects">Projects</a></li>
+                    <li class="nav-items"><a href="#Contactme">Contact Me</a></li>
+                    <li class="ddl" style="display: none;"><i class='bx bx-list-ul'></i></li>
+                   
                 </ul>
             </div>
         </nav>
     </heder>
-    <!-- <header>
-        <nav>
-            <div class="left">Sakshi's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="#HOME"> Home</a></li>
-                    <li><a href="#ABOUTME"> About Me</a></li>
-                    <li><a href="#Education">Education</li><a>
-                        <li><a href="#Skiils">Skills</li><a>
-                            <li><a href="#Projects">Projects</li><a>
-                                <li><a href="#ContactMe">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header> -->
+
     <a name="HOME">
         <main>
     </a>
     <section class="firstSection">
         <div class="leftsection">
             <pre><p class="content">Hey! I am</p></pre>
-            <div>
-                <span class="Pink">Sakshi Sharma</span>
+            <div  class="Pink">
+                <span>Sakshi Sharma</span>
             </div>
             <div class="">
                 <p class="content">& I'm a </p> <span id="typed-output"></span>
@@ -148,10 +137,10 @@
                 <img src="./Assets/bsapg.png" Style=" width:28%; border-radius: 50%;"></img>
                 <br>
 
-                <h3>Graduation(B.Sc-CS)[2020]</h3>
+                <h3>Grad(B.Sc-CS)[2020]</h3>
             </div>
             <br>
-            <p><b>College:</b>BSA Degree College, Mathura</p>
+            <p><b>College:</b>Babu Shivnath Agrawal Degree College, Mathura</p>
             <br><b>University:</b> DBRAU
             <p><button onclick="www.bsapgcollege.ac.in">Visit Now</button></p>
         </div>
@@ -392,17 +381,17 @@
                 <div class="col-lg-4 col-md-6 text-center">
                     <ul
                         class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 mb-mb-0">
-                        <li>
+                        <li class="nav-items">
                             <a href="#">
                                 <i class="fab fa-instagram"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="nav-items">
                             <a href="#">
                                 <i class="fab fa-facebook"></i>
                             </a>
                         </li>
-                        <li>
+                        <li class="nav-items">
                             <a href="#">
                                 <i class="fab fa-twitter"></i>
                             </a>

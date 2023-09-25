@@ -10,6 +10,7 @@ body {
 }
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -17,7 +18,6 @@ nav {
     background-color: rgb(27, 2, 47);
     font-size: 1.5rem;
 }
-
 .rightsection {
     filter: drop-shadow(10px 10px 10px rgb(218, 176, 238));
 }
@@ -112,7 +112,6 @@ nav ul a:hover {
     font-size: 3.2rem;
 
 }
-
 .rightsection {
     margin: 18px;
     width: 29%;
@@ -201,7 +200,7 @@ nav ul a:hover {
     border-radius: 20px;
     padding: 20px;
     border: 0px;
-    margin-left: 650px;
+    margin-left: 550px;
     align-self: center;
     height: 60px;
     width: 250px;
@@ -429,7 +428,7 @@ nav ul a:hover {
 .leftcontact .cntct-txt
 {
     font-size: 1.35rem;
-    margin-top: 29px;
+    margin-top: 20px;
     
 }
 

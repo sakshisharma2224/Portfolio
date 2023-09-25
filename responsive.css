@@ -1,0 +1,86 @@
+@media(max-width:1144px) {
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar .left {
+        font-size: 1.5rem;
+    }
+
+    .navbar .right {
+        font-size: 0.8rem;
+    }
+
+    .leftsection,
+    .Pink,
+    .content {
+        font-size: 2.5rem;
+    }
+
+    .rightsection {
+        width: 25%;
+    }
+
+    .leftsecondsection {
+        width: 35%;
+    }
+
+    .rightsecondsection {
+        width: 50%;
+        font-size: 1.3rem;
+    }
+
+    .btn {
+        margin-left: 450px;
+    }
+
+    .skillhead {
+        font-size: 2.5rem;
+    }
+
+    .ed {
+        padding: 15px;
+        margin-block: 15px;
+        width: 20%;
+        background-size: cover;
+    }
+    .card 
+    {
+        background-size: cover;
+        height: 95%;
+        width: 95%;
+    }
+    .cntct-txt
+    {
+        margin-top: 0px;
+    }
+    .cntct-txt h1{
+        margin-top: 0px;
+        font-size: 1.2rem;
+
+    }
+    .middcontact
+    {
+       font-size: 1.2rem;
+       margin-top: 25px;
+    }
+    .rghtcontact
+    {
+     margin-top: 5px;
+     }
+     .rghtcontact h2,h3,h5
+     {
+        font-size: 0.8rem;
+     }
+}
+
+@media(max-width:1053px) {}
+
+
+@media(max-width:799) {
+    .navbar {
+        width: 100%;
+    }
+
+}
