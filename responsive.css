@@ -1,15 +1,15 @@
-@media(max-width:1144px) {
+@media(max-width:1166px) {
     .navbar {
-        width: 100%;
+        width: 102%;
         justify-content: space-between;
     }
 
     .navbar .left {
         font-size: 1.5rem;
     }
-
+ 
     .navbar .right {
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
     .leftsection,
@@ -45,42 +45,127 @@
         width: 20%;
         background-size: cover;
     }
-    .card 
-    {
+
+    .card {
         background-size: cover;
         height: 95%;
         width: 95%;
     }
-    .cntct-txt
-    {
+
+    .cntct-txt {
         margin-top: 0px;
     }
-    .cntct-txt h1{
+
+    .cntct-txt h1 {
         margin-top: 0px;
         font-size: 1.2rem;
 
     }
-    .middcontact
-    {
-       font-size: 1.2rem;
-       margin-top: 25px;
+
+    .middcontact {
+        font-size: 1.2rem;
+        margin-top: 25px;
     }
-    .rghtcontact
-    {
-     margin-top: 5px;
-     }
-     .rghtcontact h2,h3,h5
-     {
+
+    .rghtcontact {
+        margin-top: 5px;
+    }
+
+    .rghtcontact h2,
+    h3,
+    h5 {
         font-size: 0.8rem;
-     }
-}
-
-@media(max-width:1053px) {}
-
-
-@media(max-width:799) {
-    .navbar {
+    }
+    .right
+    {
+        padding-right: 50px;
+    }
+        .rightsecondsection {
+        width: 50%;
+        font-size: 1.6rem;
+    }
+    .skill-container
+    {
+        margin-left: 225px;
+    }
+    .footer_wrapper
+    {
         width: 100%;
     }
+}
+@media(max-width:950px)
+{
+    .navbar{
+        width: 965px;
+    }
+    .rightsecondsection
+    {
+        width: 50%;
+        font-size: 1.32rem;
+    }
+    .btn{
+        margin-left: 350px;
+    }
+    .skill-container
+    {
+        margin-left: 150px;
+    }
+    .footer_wrapper
+    {
+        width: 100%;
+    }
+}
+
+@media(max-width:890px) {
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .navbar .left {
+        font-size: 1.2rem;
+    }
+
+    .navbar .right {
+        font-size: 1rem;
+    }
+
+
+    .leftsection,
+    .Pink,
+    .content {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        margin-left: 350px;
+    }
+
+    .ed {
+        padding: 20px;
+        margin-block: 20px;
+        width: 40%;
+        background-size: cover;
+    }
+
+    .thirdsection {
+        display: grid;
+        width: 100%;
+        margin: 100px 350px 0px;
+        align-items: center;
+        cursor: pointer;
+    }
+    .skill-container
+    {
+        margin-left: 120px;
+    }
+}
+
+
+@media(max-width:890) {
+    .navbar {
+        width:auto;
+    }
+    
 
 }
