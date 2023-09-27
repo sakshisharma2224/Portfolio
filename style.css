@@ -108,7 +108,7 @@ nav ul a:hover {
 
 .leftsection {
 
-    width: 37%;
+    width: 50%;
     font-size: 3.2rem;
 
 }
@@ -169,7 +169,7 @@ nav ul a:hover {
 
 .rightsecondsection {
     width: 45%;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
     justify-content: center;
     align-items: center;

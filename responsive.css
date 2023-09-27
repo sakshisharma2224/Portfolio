@@ -93,8 +93,8 @@
         width: 100%;
     }
 }
-@media(max-width:950px)
-{
+
+@media(max-width:950px){
     .navbar{
         width: 965px;
     }
@@ -136,6 +136,9 @@
     .content {
         font-size: 1.8rem;
     }
+    .rightsecondsection{
+        font-size: 1rem;
+    }
 
     .btn {
         margin-left: 350px;
@@ -144,7 +147,7 @@
     .ed {
         padding: 20px;
         margin-block: 20px;
-        width: 40%;
+        width: 500px;
         background-size: cover;
     }
 
@@ -162,10 +165,104 @@
 }
 
 
-@media(max-width:890) {
-    .navbar {
-        width:auto;
+@media(max-width:800px) {
+    .navbar
+    {
+      width: 104%;
+      max-block-size: 100%;
+      margin-right: 0%;
+    }
+    .navbar .left {
+        font-size: 0.9rem;
+    }
+ 
+    .navbar .right {
+        font-size:0.8rem;
+        justify-content: space-around;
+        padding-left: 30px;
+    }
+    .rightsecondsection{
+        font-size: 1rem;
+    }
+    .leftsection,
+    .Pink,
+    .content {
+        font-size: 1.3rem;
+    }
+    .footer_wrapper
+    {
+        width: 101%;
     }
     
+
+}
+@media(max-width:758px) {
+.navbar{
+    width: 107%;
+}
+.right
+{
+    font-size: 0.5rem;
+    gap: 2px;
+}
+.leftsection
+{
+    width: 40%;
+}
+.rightsecondsection
+{
+    width: 55%;
+    font-size: 0.9rem;
+}
+.btn{
+    margin-left: 300px;
+}
+.footer_wrapper
+{
+    width: 102%;
+}
+
+
+}
+@media(max-width:668px) {
+.navbar{
+    width: 103%;
+}
+    .navbar .right
+{
+    font-size: 0.5rem;
+}
+.navbar .right ul {
+    margin-left: 0px;
+}
+.rightsecondsection
+{
+    width: 50%;
+ font-size: 0.7rem;
+}
+.btn
+{
+    width: auto;
+    margin-left: 250px;
+    font-size: 0.8rem;
+}
+.thirdsection
+{
+    margin-left: 30px;
+    padding-top: 10px;
+}
+.thirdsection .ed
+{
+    width: 250px;
+
+}
+
+.skillhead{
+    font-size: 1.9rem;
+}
+.footer_wrapper
+{
+    width: 104%;
+}
 
 }
